@@ -4,8 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------Fontawsome-----------Cdn---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-----------Fontawsome-----------Cdn---------------->
+
+    <!-----------Daisy-----------Cdn---------------->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-----------Daisy-----------Cdn---------------->
+
+    <!-----------Tailwind-----------Cdn---------------->
     <script src="https://cdn.tailwindcss.com"></script>
+     <!-----------Tailwind-----------Cdn---------------->
     <title>Tailwind-Baiker</title>
 </head>
 
@@ -146,8 +155,19 @@
 
     <main class="md:container md:mx-auto">
         <!---------Fiture---------Bike--------Start---------->
-        <section>
-
+        <section class="my-24">
+            <h3 class="text-5xl font-semibold text-center">Featuer Bikes<span class="text-error">In This Year</span></h3>
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
+                <div class="card w-96">
+                    <figure><img src="others/feature-bike.png" /></figure>
+                  </div>
+                  <div class="card w-96">
+                    <figure><img src="others/feature-bike.png" /></figure>
+                  </div>
+                  <div class="card w-96">
+                    <figure><img src="others/feature-bike.png" /></figure>
+                  </div>
+            </div>
         </section>
         <!---------Fiture---------Bike--------End---------->
 
@@ -161,7 +181,7 @@
             <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8">
                 <!-------Card-------1------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-600 border-y-sky-300">
-                    <figure><img class="w-96" src="others/latest1.png" /></figure>
+                    <figure><img class="w-full" src="others/latest1.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -173,7 +193,7 @@
                 </div>
                 <!-------Card-------2------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-600 border-y-sky-300">
-                    <figure><img src="others/latest3.png" /></figure>
+                    <figure><img class="w-full" src="others/latest3.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -185,7 +205,7 @@
                 </div>
                 <!-------Card-------3------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-600 border-y-sky-300">
-                    <figure><img src="others/latest2.png" /></figure>
+                    <figure><img class="w-full" src="others/latest2.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -197,7 +217,7 @@
                 </div>
                 <!-------Card-------4------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-300 border-y-sky-600">
-                    <figure><img src="others/latest2.png" /></figure>
+                    <figure><img class="w-full" src="others/latest2.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -209,7 +229,7 @@
                 </div>
                 <!-------Card-------5------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-300 border-y-sky-600">
-                    <figure><img src="others/latest3.png" /></figure>
+                    <figure><img class="w-full" src="others/latest3.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -221,7 +241,7 @@
                 </div>
                 <!-------Card-------6------>
                 <div class="card card-compact bg-base-100 shadow-xl border-4 border-x-sky-300 border-y-sky-600">
-                    <figure><img src="others/latest1.png" /></figure>
+                    <figure><img class="w-full" src="others/latest1.png" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVLE S-73</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas est amet cupiditate autem,
@@ -348,7 +368,113 @@
             </div>
         </section>
         <!---------Clients---------Clayent--------End---------->
+
+
+
+
+
+        <!---------Question---------Section--------Start---------->
+        <section class="my-24">
+            <h3 class="text-5xl font-semibold text-center">Frequently Asked <span class="text-error">Question</span>
+            </h3>
+            <div class="hero min-h-screen mt-12 ">
+                <div class="hero-content flex-col lg:gap-24 lg:flex-row ">
+                    <img src="others/faq.png" class="max-w-sm rounded-lg " />
+                    <div class="md:mt-8">
+                        <div class="collapse collapse-arrow bg-sky-200 mb-4">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                <Translate text="Click to open this one and close others text-2xl" />
+                                <h1 class="font-bold text-cyan-950">What Arw You Most Importent Things I Shouls
+                                 know about reading a Bike....?</h1>
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic reiciendis
+                                    facere laboriosam maxime. Vero perferendis ex similique sunt iure.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200 mb-4">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                <Translate text="Click to open this one and close others" />
+                                How Mamey your Bike...?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic reiciendis
+                                    facere laboriosam maxime. Vero perferendis ex similique sunt iure</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200 mb-4">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                <Translate text="Click to open this one and close others" />
+                                Whare are your location...?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora harum,
+                                    at sint beatae rerum labore. Eos ad eligendi omnis.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200 mb-4">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                <Translate text="Click to open this one and close others" />
+                                What Arw You Most Importent Things..?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora harum,
+                                    at sint beatae rerum labore. Eos ad eligendi omnis.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200 mb-4">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                <Translate text="Click to open this one and close others" />
+                                Whare Country import your Bike...?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempora harum,
+                                    at sint beatae rerum labore. Eos ad eligendi omnis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------Question---------Section--------End---------->
     </main>
+
+
+
+    <!---------Footer---------Section--------Start---------->
+    <footer class="footer flex justify-between footer-center p-10 bg-base-200 text-base-content rounded">
+        <div class="left">
+            <div class="grid grid-flow-col gap-4 font-bold">
+                <a class="link link-hover">About us</a> 
+                <a class="link link-hover">Contact</a> 
+                <a class="link link-hover">Jobs</a> 
+                <a class="link link-hover">Press kit</a>
+              </div> 
+              <div>
+                <div class="grid grid-flow-col gap-4 text-3xl cursor-pointer text-cyan-600">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-regular fa-envelope"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </div> 
+              <div>
+                <p class="font-bold text-violet-500 text-1xl">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+              </div>
+        </div>
+        <div class="fight">
+            <img class="w-36" src="others/ios.png">
+            <img class="w-36" src="others/android.png">
+        </div>
+    </footer>
+    <!---------Footer---------Section--------End---------->
 </body>
 
 </html>
